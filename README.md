@@ -1,5 +1,5 @@
 # Working with related data
-The previous examples we looked at using PDO used single database tables. The following considers how we can work with multiple tables that are related to each other.
+The previous examples we looked at using PDO used a single database table. The following considers how we can work with multiple tables, using foreign keys and joins.
 
 ## Reading Data
 Previously we looked at creating a *details.php* page that used the id number of a record to query a database table and show information for that record. Consider the musicians and instruments example we looked at previously.
@@ -71,7 +71,7 @@ $conn=NULL;
 //simple validation to see if we found a musician
 if($musician){
   //display the musicians full name
-	echo "<h1>{$musician['first_name']} {$musician["last_name"]}</h1>";
+  echo "<h1>{$musician['first_name']} {$musician["last_name"]}</h1>";
 
   //display the instruments the musician plays
   echo "<p>Instruments:</p>";
