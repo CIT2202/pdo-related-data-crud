@@ -1,5 +1,5 @@
 # Working with related data
-The previous examples we looked at using PDO used a single database table. The following considers how we can work with multiple tables, using foreign keys and joins.
+The previous examples we looked at using PDO used a single database table. This repository contains examples of building database driven functionality that uses multiple tables, foreign keys and joins. 
 
 ## Reading Data
 Previously we looked at creating a *details.php* page that used the id number of a record to query a database table and show information for that record. Consider the musicians and instruments example we looked at previously.
