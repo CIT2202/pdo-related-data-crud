@@ -28,7 +28,7 @@ Previously we looked at creating a *details.php* page that used the id number of
 | 3              | 2           |
 | 2              | 4           |
 
-When we view the details for a musician it would be nice to show the instruments that musician plays. Have a look at the following PHP code that does this.
+When we view the details for a musician it would be nice to show the instruments that musician plays. Have a look at the following PHP code.
 
 ```php
 <?php
@@ -56,7 +56,7 @@ INNER JOIN instruments ON instrument_musician.instrument_id = instruments.id
 WHERE musicians.id = :id;");
 $stmt->bindValue(':id',$musicianId);
 $stmt->execute();
-$instruments=$stmt->fetchAll(); //there can be multiple instruments
+$instruments=$stmt->fetchAll(); //there could be multiple instruments
 
 $conn=NULL;
 ?>
