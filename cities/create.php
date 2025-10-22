@@ -9,7 +9,7 @@ catch (PDOException $exception)
 }
 
 //select all the countries
-$query = "SELECT * FROM countries";
+$query = "SELECT id, name FROM countries";
 $resultset = $conn->query($query);
 $countries = $resultset->fetchAll();
 $conn=NULL;
