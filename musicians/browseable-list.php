@@ -9,7 +9,7 @@ catch (PDOException $exception)
 }
 
 //select all the musicians
-$query = "SELECT * FROM musicians";
+$query = "SELECT id, first_name, last_name FROM musicians";
 $resultset = $conn->query($query);
 $musicians = $resultset->fetchAll();
 $conn=NULL;
