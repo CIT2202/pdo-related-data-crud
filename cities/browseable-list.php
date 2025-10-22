@@ -9,7 +9,7 @@ catch (PDOException $exception)
 }
 
 //select all the cities
-$query = "SELECT * FROM cities";
+$query = "SELECT id, name FROM cities";
 $resultset = $conn->query($query);
 $cities = $resultset->fetchAll();
 $conn=NULL;
