@@ -9,7 +9,7 @@ catch (PDOException $exception)
 }
 
 //select all the genres
-$query = "SELECT * FROM instruments";
+$query = "SELECT id, name FROM instruments";
 $resultset = $conn->query($query);
 $instruments = $resultset->fetchAll();
 $conn=NULL;
