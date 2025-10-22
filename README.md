@@ -114,7 +114,7 @@ catch (PDOException $exception)
 }
 
 //select all the countries
-$query = "SELECT * FROM countries";
+$query = "SELECT id, name FROM countries";
 $resultset = $conn->query($query);
 $countries = $resultset->fetchAll();
 $conn=NULL;
@@ -178,7 +178,7 @@ catch (PDOException $exception)
 }
 
 //select all the genres
-$query = "SELECT * FROM instruments";
+$query = "SELECT id, name FROM instruments";
 $resultset = $conn->query($query);
 $instruments = $resultset->fetchAll();
 $conn=NULL;
@@ -224,4 +224,4 @@ foreach($instruments as $instrument){
 ```
 
 We need to get hold of all the instruments from the database so we do this at the top of the page.
-Using a foreach loop we generate a checkbox for each instrument. the user can then select the instruments they want to associate with the new musician.
+Using a ```foreach``` loop we generate a checkbox for each instrument. the user can then select the instruments they want to associate with the new musician.
